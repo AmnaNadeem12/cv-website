@@ -9,7 +9,7 @@ This is a responsive personal CV website built using HTML, CSS, and Flexbox. It 
 - JavaScript
 
 ## Live Website
-https://cv-omega-azure.vercel.app
+cv-website-taupe.vercel.app
 ## Student Information
 Name: Amna Nadeem  
 Roll No: 23L-0791
