@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amna Nadeem - CV</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div class="cv-wrapper">
+
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="images/profile.png" alt="Profile Photo" class="profile-pic"/>
+        <h2>Amna Nadeem</h2>
+        <p>BSCS Undergraduate</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Contact</h3>
+        <ul>
+          <li>📧 amnandz12@gmail.com</li>
+          <li>📞 +92 314 418 6866</li>
+          <li>📍 Johar Town, Lahore</li>
+          <li>🌐 github.com/AmnaNadeem12</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Education</h3>
+        <p><strong>Bachelor's in CS</strong><br/>FAST NUCES, Lahore<br/>2023–Present</p>
+        <p><strong>Intermediate (Pre-Eng)</strong><br/>LCWU, Lahore<br/>2021–2023</p>
+        <p><strong>Matriculation (SSE)</strong><br/>Syed School System<br/>2019–2021</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Skills</h3>
+        <ul class="skill-list">
+          <li>C++, C, Assembly</li>
+          <li>HTML, CSS, JS</li>
+          <li>Node.js, Express</li>
+          <li>SQL Server, MySQL</li>
+          <li>Problem Solving</li>
+          <li>Team Collaboration</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Languages</h3>
+        <ul>
+          <li>Urdu</li>
+          <li>English</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <div class="top-header">
+        <div>
+          <h1>Amna Nadeem</h1>
+          <span>BSCS Undergraduate</span>
+        </div>
+        <div class="controls">
+          <button id="toggleMode" class="icon-btn">
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <a href="cv.pdf" download class="icon-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Motivated and detail-oriented Computer Science undergraduate at FAST NUCES Lahore with a strong foundation in programming, databases, and web development. Passionate about building efficient systems and solving real-world problems through technology.
+        </p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="entry">
+          <h3>Makeup Product Management System</h3>
+          <span>2023 – Present</span>
+          <ul>
+            <li>Built a database-driven web application for managing products and orders.</li>
+            <li>Implemented REST APIs using Node.js and Express.js.</li>
+            <li>Handled SQL Server integration and stored procedures.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>OOP-Based Banking Management System</h3>
+          <span>2023</span>
+          <ul>
+            <li>Designed and implemented a banking system using OOP principles in C++.</li>
+            <li>Implemented account management, transactions, and validations.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Sudoku Game (COAL)</h3>
+          <span>2023</span>
+          <ul>
+            <li>Developed a Sudoku game using Assembly Language.</li>
+            <li>Implemented grid logic, number placement, and memory-efficient solutions.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>3rd Position – Intermediate at LCWU</li>
+          <li>Certificate of Academic Excellence – LCWU</li>
+        </ul>
+      </section>
+
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        
+        <div id="formMessage" class="form-message"></div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer>
+    © 2026 Amna Nadeem | All Rights Reserved
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("toggleMode");
+    const moonIcon = `<svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>`;
+    const sunIcon = `<svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"/>
+      <line x1="12" y1="1" x2="12" y2="3"/>
+      <line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/>
+      <line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>`;
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.innerHTML = document.body.classList.contains("dark") ? sunIcon : moonIcon;
+    });
+
+    // Contact Form Handler
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+      };
+
+      // Show success message
+      formMessage.className = "form-message success";
+      formMessage.textContent = "Thank you for your message! I'll get back to you soon.";
+      formMessage.style.display = "block";
+
+      // Reset form
+      contactForm.reset();
+
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        formMessage.style.display = "none";
+      }, 5000);
+
+      // In a real application, you would send this data to a server
+      console.log("Form submitted:", formData);
+    });
+  </script>
+
+</body>
+</html>
